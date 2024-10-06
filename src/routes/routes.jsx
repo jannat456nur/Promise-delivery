@@ -6,6 +6,7 @@ import UserLayout from "../layouts/UserLayout";
 import ErrorPage from "../pages/ErrorPage";
 import Login from "../pages/Login";
 import Registration from "../pages/Registration";
+import Invoices from "../pages/Invoices";
 // import ProtectedRoute from "./PrivateRoute";
 
 export const routes = createBrowserRouter([
@@ -17,6 +18,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/',
                 element: <DashboardBody />,
+            },
+            {
+                path: '/invoices',
+                element: <Invoices />,
             },
             {
                 path: '/login',
